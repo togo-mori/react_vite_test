@@ -6,3 +6,4 @@ RUN apk update && \
 
 COPY ./ /app/
 WORKDIR /app
+RUN yarn install
