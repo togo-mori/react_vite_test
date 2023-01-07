@@ -9,6 +9,6 @@ services:
     command: >
       bash -c "yarn dev --host"
     volumes:
-      - ./:/react_test_app
+      - ./:/app
     ports:
       - "3000:3000"
