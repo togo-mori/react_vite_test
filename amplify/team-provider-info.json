@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-reactvitetest-dev-124712-unauthRole",
       "StackName": "amplify-reactvitetest-dev-124712",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:662699157964:stack/amplify-reactvitetest-dev-124712/77f9d090-9099-11ed-bdea-0a94c633f4b3",
-      "AmplifyAppId": "d3hqtqeo8bov4x"
+      "AmplifyAppId": "d3hqtqeo8bov4x",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-reactvitetest-dev-124712-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
@@ -19,7 +20,9 @@
         "reactvitetest799f2a54799f2a54CustomMessage": {
           "REDIRECTURL": "http://localhost:3000/login",
           "EMAILSUBJECT": "user verification",
-          "EMAILMESSAGE": "click the link"
+          "EMAILMESSAGE": "click the link",
+          "deploymentBucketName": "amplify-reactvitetest-dev-124712-deployment",
+          "s3Key": "amplify-builds/reactvitetest799f2a54799f2a54CustomMessage-7a7837365651644c4b55-build.zip"
         }
       }
     }
