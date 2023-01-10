@@ -1,0 +1,26 @@
+{
+  "trigger": true,
+  "modules": [
+    "verification-link"
+  ],
+  "parentResource": "reactvitetest799f2a54799f2a54",
+  "functionName": "reactvitetest799f2a54799f2a54CustomMessage",
+  "resourceName": "reactvitetest799f2a54799f2a54CustomMessage",
+  "parentStack": "auth",
+  "triggerEnvs": [
+    {
+      "key": "RESOURCENAME",
+      "value": "resourceName"
+    }
+  ],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/CustomMessage",
+  "triggerTemplate": "CustomMessage.json.ejs",
+  "triggerEventPath": "CustomMessage.event.json",
+  "roleName": "reactvitetest799f2a54799f2a54CustomMessage",
+  "skipEdit": true,
+  "REDIRECTURL": "http://localhost:3000/login",
+  "EMAILSUBJECT": "user verification",
+  "EMAILMESSAGE": "click the link",
+  "RESOURCENAME": "resourceName",
+  "enableCors": false
+}
