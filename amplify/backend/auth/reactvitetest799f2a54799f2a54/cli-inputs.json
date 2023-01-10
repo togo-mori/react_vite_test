@@ -37,7 +37,6 @@
     "resourceName": "reactvitetest799f2a54799f2a54",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "manual",
-    "thirdPartyAuth": false,
     "usernameAttributes": [
       "email"
     ],
@@ -53,6 +52,37 @@
     "serviceName": "Cognito",
     "verificationBucketName": "reactvitetest799f2a54799f2a54verificationbucket",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [
+      {
+        "category": "function",
+        "resourceName": "reactvitetest799f2a54799f2a54CustomMessage",
+        "triggerProvider": "Cognito",
+        "attributes": [
+          "Arn",
+          "Name"
+        ]
+      }
+    ],
+    "permissions": [],
+    "authTriggerConnections": "[\n  {\n    \"triggerType\": \"CustomMessage\",\n    \"lambdaFunctionName\": \"reactvitetest799f2a54799f2a54CustomMessage\"\n  }\n]",
+    "authProviders": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "thirdPartyAuth": false
   }
 }
