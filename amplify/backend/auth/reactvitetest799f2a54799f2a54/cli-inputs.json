@@ -1,0 +1,58 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "reactvitetest799f2a54_identitypool_799f2a54",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "reactv799f2a54",
+    "userPoolName": "reactvitetest799f2a54_userpool_799f2a54",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OPTIONAL",
+    "mfaTypes": [
+      "TOTP"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": "7",
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "reactv799f2a54_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "799f2a54",
+    "resourceName": "reactvitetest799f2a54799f2a54",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "manual",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+      "email"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": {
+      "CustomMessage": [
+        "verification-link"
+      ]
+    },
+    "hostedUI": false,
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "verificationBucketName": "reactvitetest799f2a54799f2a54verificationbucket",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}
